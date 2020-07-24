@@ -24,7 +24,7 @@ V2Ray+ws+tls+web是目前最稳定的翻墙技术之一，即使在十一也稳�
 
 安全提示：
 
->如果服务器之前运行过SS，SSR，V2Ray（非TLS）等服务，请确保先停止原来的代理服务，再安装V2Ray。如果不知道怎么停止，请重装VPS（在网页控制面板上点reinstall，不到一分钟就搞定）。翻墙的隐蔽性取决于最薄弱的一环，如果服务器上同时运行其它代理软件，这些代理软件依然会被墙探测到，这种情况下V2Ray+ws+tls+web并不能保证隐蔽性。
+> 如果服务器之前运行过SS，SSR，V2Ray（非TLS）等服务，请确保先停止原来的代理服务，再安装V2Ray。如果不知道怎么停止，请重装VPS（在网页控制面板上点reinstall，不到一分钟就搞定）。翻墙的隐蔽性取决于最薄弱的一环，如果服务器上同时运行其它代理软件，这些代理软件依然会被墙探测到，这种情况下V2Ray+ws+tls+web并不能保证隐蔽性。
 
 自建网站看上去很复杂，其实很简单，只要按照以下步骤：
 
@@ -76,11 +76,9 @@ GoDaddy和淘宝的用法完全一样。注册完成以后，回到GoDaddy首页
 
 ![img-reg-cf](https://i.imgur.com/8fM0rJP.png)
 
-点进入购物车，进入结算页面。GoDaddy默认选购买2年，我们的域名只用来翻墙，选1年就可以了，到时候再换。
-GoDaddy支持支付宝或信用卡付款。第一次购买域名，GoDaddy会要求你填写个人信息，这里姓名和手机号随便填一个假的就行。
+点进入购物车，进入结算页面。GoDaddy默认选购买2年，我们的域名只用来翻墙，选1年就可以了，到时候再换。 GoDaddy支持支付宝或信用卡付款。第一次购买域名，GoDaddy会要求你填写个人信息，这里姓名和手机号随便填一个假的就行。
 
-购买完成，刚买到的域名不会马上在域名列表里出现，一般会有一两分钟的延迟。
-接下来注册Cloudflare。GoDaddy的页面暂时不要关，一会还要回来配置域名服务器。
+购买完成，刚买到的域名不会马上在域名列表里出现，一般会有一两分钟的延迟。 接下来注册Cloudflare。GoDaddy的页面暂时不要关，一会还要回来配置域名服务器。
 
 1.3 注册CloudFlare。
 
@@ -88,8 +86,7 @@ GoDaddy支持支付宝或信用卡付款。第一次购买域名，GoDaddy会要
 
 ![img-reg-cf](https://i.imgur.com/S2epVPg.png)
 
-接下来输入刚才购买的域名，注意这里输入的是【二级域名】。所谓二级域名，可以理解为网址去掉www。
-比如我的网站的网址是www.hrw1rdzqa7c5a8u3ibkn.website，那么这里应该输入hrw1rdzqa7c5a8u3ibkn.website，如图：
+接下来输入刚才购买的域名，注意这里输入的是【二级域名】。所谓二级域名，可以理解为网址去掉www。 比如我的网站的网址是www.hrw1rdzqa7c5a8u3ibkn.website，那么这里应该输入hrw1rdzqa7c5a8u3ibkn.website，如图：
 
 ![img-cf-addsite](https://i.imgur.com/Q8Q5TA9.png)
 
@@ -101,7 +98,6 @@ GoDaddy支持支付宝或信用卡付款。第一次购买域名，GoDaddy会要
 
 点【Confirm Plan】，进入管理页面，不要关掉页面，接下来配置域名解析。
 
-
 1.4 配置域名解析
 
 配置域名解析分两步：
@@ -112,8 +108,7 @@ GoDaddy支持支付宝或信用卡付款。第一次购买域名，GoDaddy会要
 
 NS记录用来表明由哪台服务器对域名进行解析。从GoDaddy买到域名后，域名是由Godaddy的服务器进行解析的。我们这里把Godaddy的服务器换成Cloudflare的服务器。
 
-如图是Cloudflare的管理界面，如果你的域名之前有配置域名解析，管理界面会显示之前的记录。暂时不用管这些。
-点Continue，修改域名服务器。
+如图是Cloudflare的管理界面，如果你的域名之前有配置域名解析，管理界面会显示之前的记录。暂时不用管这些。 点Continue，修改域名服务器。
 
 点【Continue with default】
 
@@ -123,8 +118,7 @@ NS记录用来表明由哪台服务器对域名进行解析。从GoDaddy买到�
 
 ![img-cf-changenameserver](https://i.imgur.com/HTUNjSb.png)
 
-画红框的部分就是Cloudflare提供的两个域名服务器，我这里是ns90.domaincontrol.com和ns91.domaincontrol.com，
-你看到的的可能和我不一样。
+画红框的部分就是Cloudflare提供的两个域名服务器，我这里是ns90.domaincontrol.com和ns91.domaincontrol.com， 你看到的的可能和我不一样。
 
 回到GoDaddy，点击屏幕右上角的用户名，选择【我的产品】。
 
@@ -140,8 +134,7 @@ NS记录用来表明由哪台服务器对域名进行解析。从GoDaddy买到�
 
 ![img-godaddy-addnameserver](https://i.imgur.com/93ic5KS.png)
 
-输入刚才Cloudflare提供的两个域名服务器，我这里是fccp.ns.cloudflare.com和xjp.ns.cloudflare.com，
-点击【保存】。
+输入刚才Cloudflare提供的两个域名服务器，我这里是fccp.ns.cloudflare.com和xjp.ns.cloudflare.com， 点击【保存】。
 
 ![fig1.4.8](https://i.imgur.com/LUl7HAd.png)
 
@@ -149,8 +142,7 @@ NS记录用来表明由哪台服务器对域名进行解析。从GoDaddy买到�
 
 接下来转移域名服务器可能需要几分钟，转移完成后会收到Cloudflare的邮件，可以先等一阵子。
 
-配置地址解析（A记录）
-转移域名服务器完成后，进入cloudflare的首页，点击右上角的【log in】，进入你的账户，如图：
+配置地址解析（A记录） 转移域名服务器完成后，进入cloudflare的首页，点击右上角的【log in】，进入你的账户，如图：
 
 ![img1.4.9](https://i.imgur.com/rdFD2Ke.png)
 
@@ -183,7 +175,7 @@ Name
 
 * www：表示解析带www的域名，即www.hrw1rdzqa7c5a8u3ibkn.website
 * @：直接解析裸域名，即hrw1rdzqa7c5a8u3ibkn.website
-* *：表示泛解析，即匹配其他所有域名*.hrw1rdzqa7c5a8u3ibkn.website
+* _：表示泛解析，即匹配其他所有域名_.hrw1rdzqa7c5a8u3ibkn.website
 
 Address
 
@@ -206,30 +198,25 @@ TTL
 
 注意云一定是灰色的。
 
-
-检查是否配置成功：
-配置完成后点【save】就大功告成了，可以打开windows的powershell，输入
+检查是否配置成功： 配置完成后点【save】就大功告成了，可以打开windows的powershell，输入
 
 `ping www.hrw1rdzqa7c5a8u3ibkn.website`
 
-(替换成你的域名)
+\(替换成你的域名\)
 
 Ping一下你的域名，如果能Ping通，就说明域名解析没问题。
 
-
 ## 2. 配置文件
 
-V2Ray和Nginx的配置文件这里已经写好。你需要做的就是填表格，把配置中标出的地方换成自己的内容。
-编辑配置文件可以用Windows记事本，不过推荐使用Notepad++。
+V2Ray和Nginx的配置文件这里已经写好。你需要做的就是填表格，把配置中标出的地方换成自己的内容。 编辑配置文件可以用Windows记事本，不过推荐使用Notepad++。
 
-下载地址：
-[网页链接，直接下载链接(7.8.4)](https://notepad-plus-plus.org/downloads/)
+下载地址： [网页链接，直接下载链接\(7.8.4\)](https://notepad-plus-plus.org/downloads/)
 
 2.1 V2Ray配置文件
 
 V2Ray配置文件如下：
 
-```
+```text
 {
 "inbound": {
     "protocol": "vmess",
@@ -250,17 +237,15 @@ V2Ray配置文件如下：
 
 是不是很短？接下来把标了符号的地方换成你自己的信息。
 
-(1)
+\(1\)
 
 ◆◆◆◆◆◆◆◆◆◆◆◆：标“◆”的地方填写UUID。
 
-UUID可以从这个网站生成：https://www.uuidgenerator.net/。只要打开或者刷新这个网页就可以得到一个UUID。
-举个例子，我生成的UUID是：
+UUID可以从这个网站生成：[https://www.uuidgenerator.net/。只要打开或者刷新这个网页就可以得到一个UUID。](https://www.uuidgenerator.net/。只要打开或者刷新这个网页就可以得到一个UUID。) 举个例子，我生成的UUID是：
 
->63c0042a-4a85-4d03-a488-3ba3aa002461
+> 63c0042a-4a85-4d03-a488-3ba3aa002461
 
-
-(2)
+\(2\)
 
 ★★★★★★★★★★★★：标“★”的地方填写一个随机字符串。注意不要删掉前面的斜杠。
 
@@ -280,7 +265,7 @@ UUID可以从这个网站生成：https://www.uuidgenerator.net/。只要打开�
 
 Nginx配置文件如下：
 
-```
+```text
 server {
     ### 1:
     server_name ●●●●●●●●●●●●;
@@ -351,30 +336,29 @@ server {
 }
 ```
 
-看上去很长，实际上只有四处需要填写，配置文件里用#1，#2，#3，#4标出了位置，把标符号的地方换成你自己的信息。
+看上去很长，实际上只有四处需要填写，配置文件里用\#1，\#2，\#3，\#4标出了位置，把标符号的地方换成你自己的信息。
 
 ●●●●●●●●●●●●：标注“●”的地方填写域名，注意这里的域名带www
 
 这个域名就是前面购买的域名，本文中是www.hrw1rdzqa7c5a8u3ibkn.website，一共有三处需要填，都以“●”标出：
 
-(1) server_name ●●●●●●●●●●●●; 注意域名和前面的server_name保持一个空格，后面的分号“;”不要删掉。
-填好之后：（注意带www，以下皆相同）
+\(1\) server\_name ●●●●●●●●●●●●; 注意域名和前面的server\_name保持一个空格，后面的分号“;”不要删掉。 填好之后：（注意带www，以下皆相同）
 
 `server_name www.hrw1rdzqa7c5a8u3ibkn.website;`
 
-(2) ssl_certificate /etc/letsencrypt/live/●●●●●●●●●●●●/fullchain.pem; 两边的斜杠“/”不要删掉。
+\(2\) ssl\_certificate /etc/letsencrypt/live/●●●●●●●●●●●●/fullchain.pem; 两边的斜杠“/”不要删掉。
 
 填好之后：
 
 `ssl_certificate /etc/letsencrypt/live/www.hrw1rdzqa7c5a8u3ibkn.website/fullchain.pem;`
 
-(3) ssl_certificate /etc/letsencrypt/live/●●●●●●●●●●●●/fullchain.pem; 一样，两边的斜杠“/”不要删掉
+\(3\) ssl\_certificate /etc/letsencrypt/live/●●●●●●●●●●●●/fullchain.pem; 一样，两边的斜杠“/”不要删掉
 
 填好之后：
 
 `ssl_certificate /etc/letsencrypt/live/www.hrw1rdzqa7c5a8u3ibkn.website/fullchain.pem;`
 
-(4) ★★★★★★★★★★★★：标注“★”的地方填写一个随机字符串，这个随机字符串必须和V2Ray配置中的一样，不然无法工作。注意不要删掉前面的斜杠。
+\(4\) ★★★★★★★★★★★★：标注“★”的地方填写一个随机字符串，这个随机字符串必须和V2Ray配置中的一样，不然无法工作。注意不要删掉前面的斜杠。
 
 这个例子里，此处填mL7Gg8K。
 
@@ -384,18 +368,17 @@ server {
 
 最后，把Nginx的配置文件另存为default.conf（注意扩展名就是.conf）
 
-
 ## 3.上传配置 & 运行
 
 3.1 连接到服务器，安装v2ray+Nginx
 
 很多新手在买到VPS之后不知所措，其实VPS和游戏账号是一样的，买游戏账号付款之后，店家会私信告诉你两件东西：
->用户名，密码
 
+> 用户名，密码
 
 买VPS付款之后，VPS提供商会给你发邮件，告诉你四件东西：
->IP地址，密码，登录账号，端口
 
+> IP地址，密码，登录账号，端口
 
 IP地址和密码一定会有，登录账号如果没说，默认是root。端口如果没说，默认填22.
 
@@ -438,29 +421,23 @@ IP地址和密码一定会有，登录账号如果没说，默认是root。端�
 
 这里说的“证书”，实际指的是“数字证书”。当然申请完全是免费的，申请时需要邮箱地址。如有必要，可以使用匿名邮箱。
 
-(1) 安装Certbot：
-`yum install -y python36 && pip3 install certbot`
+\(1\) 安装Certbot： `yum install -y python36 && pip3 install certbot`
 
-
-运行这条命令后，如果显示：
-Successfully installed xxxx, xxxx, xxxx (各种软件包名字)
+运行这条命令后，如果显示： Successfully installed xxxx, xxxx, xxxx \(各种软件包名字\)
 
 就表示成功。
 
-(2) 停止防火墙
-`systemctl stop firewalld && systemctl disable firewalld`
+\(2\) 停止防火墙 `systemctl stop firewalld && systemctl disable firewalld`
 
 注意，在CentOS7版本以上，默认开启防火墙，不关闭防火墙将无法申请证书。某些系统上没有安装firewalld防火墙，执行这一步命令会报错，但是不影响后面的操作。
 
 运行这条命令后，如果显示：
->Removed /etc/systemd/system/multi-user.target.wants/firewalld.service.
-Removed /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
+
+> Removed /etc/systemd/system/multi-user.target.wants/firewalld.service. Removed /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
 
 就表示成功
 
-(3) 申请SSL证书
-这一步做个填空题，把这条命令里的域名和邮箱，换成你自己的信息。
-`certbot certonly --standalone --agree-tos -n -d www.●●●●●● -d ●●●●●● -m ▲▲▲@▲▲▲.▲▲▲`
+\(3\) 申请SSL证书 这一步做个填空题，把这条命令里的域名和邮箱，换成你自己的信息。 `certbot certonly --standalone --agree-tos -n -d www.●●●●●● -d ●●●●●● -m ▲▲▲@▲▲▲.▲▲▲`
 
 第一个-d加一个带www的域名，第二个-d加一个不带www的域名，-m后面加你的电子邮箱。
 
@@ -468,31 +445,43 @@ Removed /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
 
 例子：（域名：www.hrw1rdzqa7c5a8u3ibkn.website，邮箱：xijinping@protonmail.com）
 
-```
+```text
 certbot certonly --standalone --agree-tos -n -d www.hrw1rdzqa7c5a8u3ibkn.website -d hrw1rdzqa7c5a8u3ibkn.website -m xijinping@protonmail.com
 ```
 
 运行这条命令后，如果显示：
 
->IMPORTANT NOTES:
-- Congratulations! Your certificate and chain have been saved at:
-  /etc/letsencrypt/live/www.hrw1rdzqa7c5a8u3ibkn.website/fullchain.pem
-  Your key file has been saved at:
-  /etc/letsencrypt/live/www.hrw1rdzqa7c5a8u3ibkn.website/privkey.pem
-  Your cert will expire on 2020-06-04. To obtain a new or tweaked
-  version of this certificate in the future, simply run certbot
-  again. To non-interactively renew *all* of your certificates, run
-  "certbot renew"
-- Your account credentials have been saved in your Certbot
-  configuration directory at /etc/letsencrypt. You should make a
-  secure backup of this folder now. This configuration directory will
-  also contain certificates and private keys obtained by Certbot so
-  making regular backups of this folder is ideal.
-- If you like Certbot, please consider supporting our work by:
-
- > Donating to ISRG / Let's Encrypt:  https://letsencrypt.org/donate
-  Donating to EFF:                    https://eff.org
-
+> IMPORTANT NOTES:
+>
+> * Congratulations! Your certificate and chain have been saved at:
+>
+>   /etc/letsencrypt/live/www.hrw1rdzqa7c5a8u3ibkn.website/fullchain.pem
+>
+>   Your key file has been saved at:
+>
+>   /etc/letsencrypt/live/www.hrw1rdzqa7c5a8u3ibkn.website/privkey.pem
+>
+>   Your cert will expire on 2020-06-04. To obtain a new or tweaked
+>
+>   version of this certificate in the future, simply run certbot
+>
+>   again. To non-interactively renew _all_ of your certificates, run
+>
+>   "certbot renew"
+>
+> * Your account credentials have been saved in your Certbot
+>
+>   configuration directory at /etc/letsencrypt. You should make a
+>
+>   secure backup of this folder now. This configuration directory will
+>
+>   also contain certificates and private keys obtained by Certbot so
+>
+>   making regular backups of this folder is ideal.
+>
+> * If you like Certbot, please consider supporting our work by:
+>
+> Donating to ISRG / Let's Encrypt: [https://letsencrypt.org/donate](https://letsencrypt.org/donate) Donating to EFF: [https://eff.org](https://eff.org)
 
 就表示成功。
 
@@ -502,8 +491,7 @@ certbot certonly --standalone --agree-tos -n -d www.hrw1rdzqa7c5a8u3ibkn.website
 * 没有正确配置域名解析。解决方法：ping一下域名，看看能不能正确解析到IP。注意不要打开CDN（云朵点灰）。
 * 没有关闭防火墙。解决方法：回到（2），关闭防火墙。
 
-(4) 配置证书自动更新
-`echo "0 0 1 */2 * service nginx stop; certbot renew; service nginx start;" | crontab`
+\(4\) 配置证书自动更新 `echo "0 0 1 */2 * service nginx stop; certbot renew; service nginx start;" | crontab`
 
 运行这条命令后，如果没有任何信息输出，就表示成功。
 
@@ -511,20 +499,17 @@ certbot certonly --standalone --agree-tos -n -d www.hrw1rdzqa7c5a8u3ibkn.website
 
 3.3 安装V2Ray和Nginx
 
-(1) 一键安装
+\(1\) 一键安装
 
 V2Ray和Nginx可以一键安装，把下列命令复制粘贴到控制台，运行即可。
 
 `yum install -y nginx && yum install -y curl && bash -c "$(curl -L -s https://install.direct/go.sh)"`
 
-运行这条命令后，如果最后一行显示：
-V2Ray v4.x.x is installed.
-就表示成功。（如果V2Ray安装成功，那么Nginx也一定安装成功）
+运行这条命令后，如果最后一行显示： V2Ray v4.x.x is installed. 就表示成功。（如果V2Ray安装成功，那么Nginx也一定安装成功）
 
-(2) 关闭SELinux
+\(2\) 关闭SELinux
 
-在某些系统上，需要关闭SELinux，否则Nginx无法正常将流量转发给V2Ray，输入
-`setsebool -P httpd_can_network_connect 1 && setenforce 0`
+在某些系统上，需要关闭SELinux，否则Nginx无法正常将流量转发给V2Ray，输入 `setsebool -P httpd_can_network_connect 1 && setenforce 0`
 
 关闭SELinux，没有提示就表示成功。
 
@@ -534,8 +519,7 @@ V2Ray v4.x.x is installed.
 
 4.1 上传配置文件
 
-这一步把第（2）步编辑好的配置文件上传就可以了。
-首先上传V2Ray的配置文件，V2Ray的配置文件存储在
+这一步把第（2）步编辑好的配置文件上传就可以了。 首先上传V2Ray的配置文件，V2Ray的配置文件存储在
 
 `/etc/v2ray`
 
@@ -555,12 +539,11 @@ V2Ray v4.x.x is installed.
 
 如果显示：
 
->V2Ray 4.x.x (V2Fly, a community-driven edition of V2Ray.)
+> V2Ray 4.x.x \(V2Fly, a community-driven edition of V2Ray.\)
 >
->A unified platform for anti-censorship.
+> A unified platform for anti-censorship.
 >
->Configuration OK.
-
+> Configuration OK.
 
 说明配置没有问题。
 
@@ -576,9 +559,7 @@ V2Ray v4.x.x is installed.
 
 如果显示：
 
->nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf test is successful
-
+> nginx: the configuration file /etc/nginx/nginx.conf syntax is ok nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 说明配置没有问题。
 
@@ -588,7 +569,7 @@ V2Ray和Nginx都是守护进程，可以认为是Windows上的“后台服务”
 
 在Linux上启动一个守护进程很简单，输入以下两条命令就可以启动V2Ray和Nginx：
 
-```
+```text
 service v2ray start
 service nginx start
 ```
@@ -621,10 +602,9 @@ service nginx start
 
 `/usr/bin/v2ray/v2ray -test -config=/etc/v2ray/config.json`
 
-注：常用命令，每次修改配置文件后，最好检查一下配置文件是否正确。
-配置文件位置：
+注：常用命令，每次修改配置文件后，最好检查一下配置文件是否正确。 配置文件位置：
 
-`/etc/v2ray/config.json `
+`/etc/v2ray/config.json`
 
 Nginx：
 
@@ -664,13 +644,11 @@ Nginx：
 
 网页模板强烈建议用纯英文模板，其中不要包含任何中文内容，否则（可能）会增加网站被墙的概率。
 
-下载好以后，解压压缩文件，一路点开，如图，可以看到里面有一个index.html文件(有些是index.htm或index.php)
+下载好以后，解压压缩文件，一路点开，如图，可以看到里面有一个index.html文件\(有些是index.htm或index.php\)
 
 ![img4.3.1](https://i.imgur.com/8UXO1Ul.png)
 
-把这个文件夹里的所有东西，包括index.html，blog.html，以及css，fonts，img，js几个文件夹，全部上传到
-/usr/share/nginx/html/
-目录下面。上传方法前面已有介绍，打开Bitvise SSH，拖动到文件管理窗口即可上传。
+把这个文件夹里的所有东西，包括index.html，blog.html，以及css，fonts，img，js几个文件夹，全部上传到 /usr/share/nginx/html/ 目录下面。上传方法前面已有介绍，打开Bitvise SSH，拖动到文件管理窗口即可上传。
 
 接下来打开网址，这时候可以看到一个真正的网站。
 
@@ -678,8 +656,7 @@ Nginx：
 
 5.1 Windows客户端
 
-Windows客户端推荐V2RayN，V2RayN是开源软件，下载地址：
-[https://github.com/2dust/v2rayN/releases](https://github.com/2dust/v2rayN/releases)
+Windows客户端推荐V2RayN，V2RayN是开源软件，下载地址： [https://github.com/2dust/v2rayN/releases](https://github.com/2dust/v2rayN/releases)
 
 可以看到有一个v2rayN-Core.zip和一个v2rayN.zip，这里下载v2rayN-Core.zip（GUI界面+V2Ray内核）。
 
@@ -707,8 +684,7 @@ Windows客户端推荐V2RayN，V2RayN是开源软件，下载地址：
 
 5.2 Android客户端
 
-安卓客户端推荐V2RayNG，配置和V2RayN可以互通。下载地址：
-[https://github.com/2dust/v2rayNG/releases](https://github.com/2dust/v2rayNG/releases)
+安卓客户端推荐V2RayNG，配置和V2RayN可以互通。下载地址： [https://github.com/2dust/v2rayNG/releases](https://github.com/2dust/v2rayNG/releases)
 
 分享配置很简单，在Windows的V2RayN客户端里，点击服务器列表，勾选右边的“显示分享内容”，可以显示配置的二维码。安卓端选择“扫描二维码”导入配置即可。
 
@@ -726,7 +702,7 @@ CDN相当于在服务器前又加了一层代理，墙只知道你的域名和CD
 
 因为前面已经注册了Cloudflare解析，所以使用CDN非常简单，只要两步即可。
 
-(1) 登录Cloudflare账号，点击【DNS】按钮，进入Cloudflare的管理页面，如图：
+\(1\) 登录Cloudflare账号，点击【DNS】按钮，进入Cloudflare的管理页面，如图：
 
 ![fig1](https://i.imgur.com/ihzyMBe.png)
 
@@ -734,7 +710,7 @@ CDN相当于在服务器前又加了一层代理，墙只知道你的域名和CD
 
 点击切换后，域名不会马上解析到CDN的地址，一般会有几分钟的延迟。可以ping一下你的服务器的域名，如果返回地址是CDN的IP，就说明切换完成。
 
-(2) 接下来配置客户端。客户端切换成CDN很简单，配置的其它地方不用改动，只要把地址一栏换成域名即可，如图
+\(2\) 接下来配置客户端。客户端切换成CDN很简单，配置的其它地方不用改动，只要把地址一栏换成域名即可，如图
 
 ![fig2](https://i.imgur.com/1MsBKA0.png)
 
@@ -762,10 +738,11 @@ ufw和firewalld的底层实现都是一样的，都调用了linux iptables，本
 
 可选配置3：使用BBR加速
 
-BBR是谷歌开发的拥塞控制算法，可以降低延迟，加快访问速度。启用BBR需要4.10以上版本Linux内核，现在大多数VPS都满足这一条件，输入uname(空格)-a可以查看内核版本.
+BBR是谷歌开发的拥塞控制算法，可以降低延迟，加快访问速度。启用BBR需要4.10以上版本Linux内核，现在大多数VPS都满足这一条件，输入uname\(空格\)-a可以查看内核版本.
 
 如果内核版本大于4.10就可以用BBR了，把以下三条命令复制到命令窗口执行：
-```
+
+```text
 bash -c 'echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf'
 bash -c 'echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf'
 sysctl -p
@@ -781,7 +758,6 @@ sysctl -p
 
 就表示成功启动了BBR加速。
 
-
 到这里，整个V2Ray翻墙教程就结束了，过程总结：
 
 * 购买域名 & 配置域名解析
@@ -796,8 +772,7 @@ sysctl -p
 
 VPS推荐
 
-在此列出一些外资VPS提供商，主要是为了给出一些直观的参考，说明自建翻墙服务的成本相对较低。这里列出的VPS网上已有大量测评，可靠性有保证。但如果使用中出现问题，我也无法为此负责。
-（以下信息可能会变动，供参考。此处价格单位是人民币）
+在此列出一些外资VPS提供商，主要是为了给出一些直观的参考，说明自建翻墙服务的成本相对较低。这里列出的VPS网上已有大量测评，可靠性有保证。但如果使用中出现问题，我也无法为此负责。 （以下信息可能会变动，供参考。此处价格单位是人民币）
 
 * Bandwagon：流量1TB/月，价格28元/月。
 * Vultr IPv4：流量0.5TB/月，价格24.5元/月
@@ -816,16 +791,17 @@ IP段，网络质量也是重要的指标，但这些指标无法直接给出，
 
 补充一下配置时经常遇到的问题和解决方案
 
-1.没有Nginx安装源
-某些VPS商家提供的系统中，没有带nginx的安装源。因此在运行V2Ray和Nginx的一键安装命令时会出现以下错误：
+1.没有Nginx安装源 某些VPS商家提供的系统中，没有带nginx的安装源。因此在运行V2Ray和Nginx的一键安装命令时会出现以下错误：
 
->Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
-* base: xxxxxx
-* extras: xxxxxx
-* updates: xxxxxx
-No package nginx available.
-Error: Nothing to do 
+> Loaded plugins: fastestmirror Loading mirror speeds from cached hostfile
+>
+> * base: xxxxxx
+> * extras: xxxxxx
+> * updates: xxxxxx
+>
+>   No package nginx available.
+>
+>   Error: Nothing to do
 
 解决办法：手动添加安装源即可，根据你的系统版本，运行以下命令：
 
@@ -841,18 +817,17 @@ CentOS6：
 
 `rpm -ivh https://nginx.org/packages/centos/6/SRPMS/nginx-1.8.1-1.el6.ngx.src.rpm`
 
-2.V2Ray安装问题
-换成以下一键命令：
+2.V2Ray安装问题 换成以下一键命令：
 
 `yum install -y curl && yum install -y nginx && bash <(curl -L -s https://install.direct/go.sh)`
 
 3.使用IPv6
 
-Nginx不会主动监听IPv6地址，如果配置了AAAA记录，需要在端口号前加上[::]:
+Nginx不会主动监听IPv6地址，如果配置了AAAA记录，需要在端口号前加上\[::\]:
 
 填好之后：
 
-```
+```text
 listen [::]:80;
 listen [::]:443 ssl http2;
 ```
@@ -865,19 +840,17 @@ listen [::]:443 ssl http2;
 
 5.客户端出现如下502错误
 
->[Warning] failed to handler mux client connection > v2ray.com/core/proxy/vmess/outbound: failed to find an available destination > v2ray.com/core/common/retry: [v2ray.com/core/transport/internet/websocket: failed to dial WebSocket > v2ray.com/core/transport/internet/websocket: failed to dial to (wss://你的域名): 502 Bad Gateway > websocket: bad handshake] > v2ray.com/core/common/retry: all retry attempts failed 
->
+> \[Warning\] failed to handler mux client connection &gt; v2ray.com/core/proxy/vmess/outbound: failed to find an available destination &gt; v2ray.com/core/common/retry: \[v2ray.com/core/transport/internet/websocket: failed to dial WebSocket &gt; v2ray.com/core/transport/internet/websocket: failed to dial to \(wss://你的域名\): 502 Bad Gateway &gt; websocket: bad handshake\] &gt; v2ray.com/core/common/retry: all retry attempts failed
 
 原因：Nginx无法把流量转发给V2Ray，原因是没有关闭SELinux。
 
-解决办法：按照3.3节的方法，关闭SELinux。
-输入：
+解决办法：按照3.3节的方法，关闭SELinux。 输入：
 
-`setsebool -P httpd_can_network_connect 1 && setenforce 0 `
-即可
+`setsebool -P httpd_can_network_connect 1 && setenforce 0` 即可
 
-#### 相关推荐
+### 相关推荐
 
-1 [V2Ray翻墙完全教程(WS+TLS+Web)](https://pincong.rocks/article/15493)
+1 [V2Ray翻墙完全教程\(WS+TLS+Web\)](https://pincong.rocks/article/15493)
 
 2 [自建梯子教程 --Trojan版本](https://trojan-tutor.github.io/2019/04/10/p41.html)
+
