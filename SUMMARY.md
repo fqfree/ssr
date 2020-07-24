@@ -16,6 +16,7 @@
 
 * [搭建V2Ray服务器（ws+tls+web）](ssr-advanced/v2ray-ws-tls-web.md)
 * [v2ray面板](ssr-advanced/v2ray-sprov-ui.md)
+* [Google原版BBR一键安装](ssr-advanced/google-bbr-install.md)
 
 ## 高级教程 <a id="ssr-professional"></a>
 
