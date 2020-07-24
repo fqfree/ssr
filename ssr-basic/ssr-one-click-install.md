@@ -8,15 +8,17 @@
 
 #### 搬瓦工官方网站：
 
-![bwg](https://ssr.tools/wp-content/uploads/Banwagonhost.png)(https://bandwagonhost.com/aff.php?aff=19935)
+[https://bandwagonhost.com/aff.php?aff=19935](https://bandwagonhost.com/aff.php?aff=19935)
 
 #### Vultr官方网站：
+
+[https://www.vultr.com/?ref=7236384](https://www.vultr.com/?ref=7236384)
 
 Vultr （vultr在2019年1月的最新活动，针对新用户，直接送50美元！vultr全球15个服务器位置可选，KVM框架，最低2.5美元/月。支持支付宝和paypal付款。）
 
 #### OneVPS官方网站
 
-[https://www.onevps.com](https://www.onevps.com/portal/aff.php?aff=3257)
+[https://www.onevps.com/portal/aff.php?aff=3257](https://www.onevps.com/portal/aff.php?aff=3257)
 
 ## SSR一键安装 （CentOS 7为例）
 
@@ -95,5 +97,5 @@ SSR状态：
 
 #### 参考链接：
 
-#### [SSR 一键安装脚本](https://ssr.tools/31)
+[SSR 一键安装脚本](https://ssr.tools/31)
 
