@@ -20,3 +20,7 @@
 
 * [Untitled](ssr-professional/untitled.md)
 
+## 工具配置教程 <a id="tools-config"></a>
+
+* [shadowrocket 配置 trojan教程](tools-config/shadowrocket-trojan.md)
+
