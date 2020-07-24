@@ -8,7 +8,7 @@
 
 #### 搬瓦工官方网站：
 
-[![bwg](https://ssr.tools/wp-content/uploads/Banwagonhost.png)](https://bandwagonhost.com/aff.php?aff=19935)
+![bwg](https://ssr.tools/wp-content/uploads/Banwagonhost.png)(https://bandwagonhost.com/aff.php?aff=19935)
 
 #### Vultr官方网站：
 
