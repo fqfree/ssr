@@ -6,7 +6,7 @@
 ## 初级教程 <a id="ssr-basic"></a>
 
 * [SSR一键安装](ssr-basic/ssr-one-click-install.md)
-* [trojan一键安装](ssr-basic/trojan-yi-jian-an-zhuang.md)
+* [trojan一键安装](ssr-basic/trojan-one-click-install.md)
 * [v2ray一键安装](ssr-basic/v2ray-one-click-install.md)
 
 ## 进阶教程 <a id="ssr-advanced"></a>
