@@ -854,5 +854,5 @@ listen [::]:443 ssl http2;
 
 2 [自建梯子教程 --Trojan版本](https://trojan-tutor.github.io/2019/04/10/p41.html)
 
-3 [搬瓦工vps的IP被封(4) Cloudflare+V2Ray+Caddy+WebSocket+TLS](https://eveaz.com/1094.html)
+3 [搬瓦工vps的IP被封\(4\) Cloudflare+V2Ray+Caddy+WebSocket+TLS](https://eveaz.com/1094.html)
 

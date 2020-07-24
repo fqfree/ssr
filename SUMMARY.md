@@ -1,7 +1,7 @@
 # Table of contents
 
 * [免费ssr/v2ray/trojan账号分享](README.md)
-* [新闻](xin-wen.md)
+* [科学上网](surf-no-wall-internet.md)
 
 ## 初级教程 <a id="ssr-basic"></a>
 
