@@ -848,9 +848,11 @@ listen [::]:443 ssl http2;
 
 `setsebool -P httpd_can_network_connect 1 && setenforce 0` 即可
 
-### 相关推荐
+### 参考链接
 
 1 [V2Ray翻墙完全教程\(WS+TLS+Web\)](https://pincong.rocks/article/15493)
 
 2 [自建梯子教程 --Trojan版本](https://trojan-tutor.github.io/2019/04/10/p41.html)
+
+3 [搬瓦工vps的IP被封(4) Cloudflare+V2Ray+Caddy+WebSocket+TLS](https://eveaz.com/1094.html)
 
