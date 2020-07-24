@@ -1,13 +1,10 @@
 # v2ray一键安装
 
-
 ## 科学上网工具 V2Ray 简介及具体搭建流程
 
 ### 关于V2Ray
 
-
 V2Ray是一个功能类似于Shadowsocks的代理工具，可以帮我们实现科学上网，支持 Socks、HTTP、Shadowsocks、VMess 等协议。
-
 
 ### V2Ray与Shadowsocks有什么区别
 
@@ -20,11 +17,9 @@ V2Ray是一个功能类似于Shadowsocks的代理工具，可以帮我们实现�
 
 ### V2Ray的缺点：
 
-1.目前SSR科学上网仍是主流，V2Ray的教程不多，上手稍慢。
-2.因为功能强大，所有需要设置的参数稍多，不过已经有图形化界面了，设置并不复杂。
+1.目前SSR科学上网仍是主流，V2Ray的教程不多，上手稍慢。 2.因为功能强大，所有需要设置的参数稍多，不过已经有图形化界面了，设置并不复杂。
 
 ### 搭建V2Ray所需条件
-
 
 其实搭建V2Ray的条件与SSR所需条件基本一致，并没有太特殊的。
 
@@ -45,13 +40,13 @@ V2Ray也是需要在国外VPS服务器上安装服务端，然后在本地设备
 
 用哪家的服务器，怎么购买
 
-[搬瓦工](https://bandwagonhost.com/aff.php?aff=19935)  [Vultr](https://www.vultr.com/?ref=7887711-4F) [ONEVPS](https://www.onevps.com/portal/aff.php?aff=3257)
+[搬瓦工](https://bandwagonhost.com/aff.php?aff=19935) [Vultr](https://www.vultr.com/?ref=7887711-4F) [ONEVPS](https://www.onevps.com/portal/aff.php?aff=3257)
 
 2.在VPS服务器上安装V2Ray
 
 2.1 Putty连接VPS服务器，复制以下命令输入开始安装：
 
-```
+```text
 wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/V2ray.Fun/master/install.sh && bash install.sh
 ```
 
@@ -83,7 +78,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/V2
 
 V2Ray.fun控制面板的修改连接菜单中，我们可以修改各项连接参数，如下图所示
 
-
 * 运行控制：用于控制V2Ray的状态。
 * UUID：用于客户端连接使用，默认是自动生成的，可以点击右侧按钮生成一个新的。
 * 主端口：用于客户端连接的端口，可设置一个新的端口，然后点击右侧的修改端口进行修改。
@@ -91,7 +85,6 @@ V2Ray.fun控制面板的修改连接菜单中，我们可以修改各项连接�
 * 传输方式：也是客户端连接参数之一，默认即可。
 * TLS：不建议开启，默认是关闭的，右侧两个按钮是操作按钮，并非表示当前状态。
 * Mux cool：多路复用功能，可提高并发连接性能，默认开启
-
 
 以上各项参数设置完成后，就可以通过V2Ray客户端连接了。点击上图左侧的运行状态菜单，用V2Ray客户端扫描二维码即可连接，或者输入Vmess链接也可以
 
@@ -102,3 +95,4 @@ V2Ray各客户端下载、安装及使用教程可参考：
 #### 参考链接：
 
 [V2Ray一键安装脚本 自带图形化界面控制面板](https://ssr.tools/269)
+
