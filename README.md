@@ -4,7 +4,7 @@
 
 ## Trojan节点
 
-地址：tg.xiaokeli.cf 端口：443 密码：tgv2ray
+地址：t1.xiaokeli.xyz 端口：443 密码：t1v2ray
 
 ## SSR节点 8月23号更新
 
